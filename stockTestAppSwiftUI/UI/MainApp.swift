@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
-struct stockTestAppSwiftUIApp: App {
+struct MainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                StocksListView().accentColor(.black)
+            }
         }
+        .modelContainer(for: StockModel.self)
     }
 }
