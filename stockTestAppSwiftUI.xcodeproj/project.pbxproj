@@ -19,7 +19,18 @@
 		BCD7EBBD2A3AE51E00A065DC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7EBBC2A3AE51E00A065DC /* String+Date.swift */; };
 		BCD7EBBF2A3AE6E300A065DC /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7EBBE2A3AE6E300A065DC /* Formatter.swift */; };
 		BCD7EBC12A3B1B2100A065DC /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7EBC02A3B1B2100A065DC /* StockView.swift */; };
+		BCD7EBC92A3B1F7500A065DC /* stockTestAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7EBC82A3B1F7500A065DC /* stockTestAppSwiftUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCD7EBCA2A3B1F7500A065DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC25B4662A39DDC700D1ACC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC25B46D2A39DDC700D1ACC7;
+			remoteInfo = stockTestAppSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BC25B46E2A39DDC700D1ACC7 /* stockTestAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stockTestAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +47,19 @@
 		BCD7EBBC2A3AE51E00A065DC /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		BCD7EBBE2A3AE6E300A065DC /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		BCD7EBC02A3B1B2100A065DC /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		BCD7EBC62A3B1F7500A065DC /* stockTestAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stockTestAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD7EBC82A3B1F7500A065DC /* stockTestAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockTestAppSwiftUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC25B46B2A39DDC700D1ACC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD7EBC32A3B1F7500A065DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				BC25B4702A39DDC700D1ACC7 /* stockTestAppSwiftUI */,
+				BCD7EBC72A3B1F7500A065DC /* stockTestAppSwiftUITests */,
 				BC25B46F2A39DDC700D1ACC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				BC25B46E2A39DDC700D1ACC7 /* stockTestAppSwiftUI.app */,
+				BCD7EBC62A3B1F7500A065DC /* stockTestAppSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +147,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BCD7EBC72A3B1F7500A065DC /* stockTestAppSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD7EBC82A3B1F7500A065DC /* stockTestAppSwiftUITests.swift */,
+			);
+			path = stockTestAppSwiftUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +175,24 @@
 			productReference = BC25B46E2A39DDC700D1ACC7 /* stockTestAppSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BCD7EBC52A3B1F7500A065DC /* stockTestAppSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD7EBCC2A3B1F7500A065DC /* Build configuration list for PBXNativeTarget "stockTestAppSwiftUITests" */;
+			buildPhases = (
+				BCD7EBC22A3B1F7500A065DC /* Sources */,
+				BCD7EBC32A3B1F7500A065DC /* Frameworks */,
+				BCD7EBC42A3B1F7500A065DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD7EBCB2A3B1F7500A065DC /* PBXTargetDependency */,
+			);
+			name = stockTestAppSwiftUITests;
+			productName = stockTestAppSwiftUITests;
+			productReference = BCD7EBC62A3B1F7500A065DC /* stockTestAppSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +205,10 @@
 				TargetAttributes = {
 					BC25B46D2A39DDC700D1ACC7 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					BCD7EBC52A3B1F7500A065DC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BC25B46D2A39DDC700D1ACC7;
 					};
 				};
 			};
@@ -174,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				BC25B46D2A39DDC700D1ACC7 /* stockTestAppSwiftUI */,
+				BCD7EBC52A3B1F7500A065DC /* stockTestAppSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +238,13 @@
 			files = (
 				BC25B47A2A39DDC800D1ACC7 /* Preview Assets.xcassets in Resources */,
 				BC25B4762A39DDC800D1ACC7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD7EBC42A3B1F7500A065DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCD7EBC22A3B1F7500A065DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD7EBC92A3B1F7500A065DC /* stockTestAppSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCD7EBCB2A3B1F7500A065DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC25B46D2A39DDC700D1ACC7 /* stockTestAppSwiftUI */;
+			targetProxy = BCD7EBCA2A3B1F7500A065DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BC25B47B2A39DDC800D1ACC7 /* Debug */ = {
@@ -401,6 +477,47 @@
 			};
 			name = Release;
 		};
+		BCD7EBCD2A3B1F7500A065DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9WW9Z623Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = den4iklvivua.stockTestAppSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stockTestAppSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stockTestAppSwiftUI";
+			};
+			name = Debug;
+		};
+		BCD7EBCE2A3B1F7500A065DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9WW9Z623Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = den4iklvivua.stockTestAppSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stockTestAppSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stockTestAppSwiftUI";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +535,15 @@
 			buildConfigurations = (
 				BC25B47E2A39DDC800D1ACC7 /* Debug */,
 				BC25B47F2A39DDC800D1ACC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD7EBCC2A3B1F7500A065DC /* Build configuration list for PBXNativeTarget "stockTestAppSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD7EBCD2A3B1F7500A065DC /* Debug */,
+				BCD7EBCE2A3B1F7500A065DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,7 +14,7 @@ struct StocksListView: View {
     @Query var stocks: [StockModel]
     @Environment(\.modelContext) private var modelContext
     
-    private let stockService = StocksService()
+    let stockService = StocksService()
     
     var body: some View {
         ScrollView {
@@ -59,7 +59,7 @@ struct StocksListView: View {
         .padding()
     }
     
-    private func load() async {
+    func load() async {
         let arr = await stockService.load()?.realTimeQuotes
         arr?.forEach({
             modelContext.insert($0)

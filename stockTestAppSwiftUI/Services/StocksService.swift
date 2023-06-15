@@ -13,9 +13,8 @@ class StocksService {
         case wrongRequest
     }
     
-    func load() async -> RealTimeQuotes? {
-        //https://finance-api.seekingalpha.com/real_time_quotes?sa_ids=146
-        guard let url = APIService.realTimeQuotes(146).rawValue else {
+    func load(stockID: Int = 146) async -> RealTimeQuotes? {
+        guard let url = APIService.realTimeQuotes(stockID).rawValue else {
             return nil
         }
         let urlRequest = URLRequest(url: url)

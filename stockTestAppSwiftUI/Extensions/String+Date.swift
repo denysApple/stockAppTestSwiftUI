@@ -11,7 +11,6 @@ extension String {
     
     var toDate: Date? {
         let res = Formatter.formatter.date(from: self)
-//        print("STRING \(self) \(res)")
         return res
     }
 }

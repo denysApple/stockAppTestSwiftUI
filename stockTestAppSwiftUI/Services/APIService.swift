@@ -11,6 +11,7 @@ enum APIService {
     
     static let HOME_URL = "https://finance-api.seekingalpha.com/"
     
+    //EXAMPLE URL: https://finance-api.seekingalpha.com/real_time_quotes?sa_ids=146
     case realTimeQuotes(Int)
     
     var rawValue: URL? {
